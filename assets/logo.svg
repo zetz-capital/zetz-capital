@@ -1,1 +1,7 @@
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+<title id="title">Zetz Capital</title>
+<desc id="desc">Monograma geométrico dourado com a letra Z.</desc>
+<rect width="512" height="512" rx="112" fill="#18150F"/>
+<path d="M120 126h272v58L226 328h166v58H120v-58l166-144H120z" fill="#E2B93B"/>
+<path d="M342 126h50v50l-50 44z" fill="#F6D978"/>
+</svg>
