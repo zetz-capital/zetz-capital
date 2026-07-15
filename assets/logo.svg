@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240" role="img" aria-labelledby="title desc">
 <title id="title">Zetz Capital</title>
-<desc id="desc">Monograma geométrico dourado com a letra Z.</desc>
-<rect width="512" height="512" rx="112" fill="#18150F"/>
-<path d="M120 126h272v58L226 328h166v58H120v-58l166-144H120z" fill="#E2B93B"/>
-<path d="M342 126h50v50l-50 44z" fill="#F6D978"/>
+<desc id="desc">Marca tipográfica provisória em amarelo e marrom.</desc>
+<rect width="720" height="240" rx="36" fill="#fff4cc"/>
+<rect x="18" y="18" width="684" height="204" rx="28" fill="none" stroke="#bd8b00" stroke-width="4"/>
+<text x="360" y="130" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="104" font-weight="700" letter-spacing="12" fill="#5c4300">ZETZ</text>
+<text x="360" y="181" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="15" fill="#9c7100">CAPITAL</text>
 </svg>
