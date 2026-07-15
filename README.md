@@ -2,24 +2,25 @@
 
 Página principal em formato Link Tree.
 
-## Endereço esperado
+## Endereço
 
 `https://zetz-capital.github.io/zetz-capital/`
 
-## Links das calculadoras
+## Estrutura preservada
 
-- Juros compostos: `https://zetz-capital.github.io/calculadora-juros-compostos/`
-- Quitar financiamento: `https://zetz-capital.github.io/calculadora-quitar-financiamento/`
+```text
+zetz-capital/
+├── index.html
+├── README.md
+├── assets/
+│   ├── logo.svg
+│   └── favicon.svg
+├── css/
+│   └── style.css
+└── js/
+    └── home.js
+```
 
-## Redes
+A paleta é a mesma da Calculadora de Juros Compostos.
 
-Os links foram inicialmente configurados como:
-
-- Instagram: `https://www.instagram.com/zetz/`
-- LinkedIn: `https://www.linkedin.com/company/zetz/`
-
-Confirme se esses perfis realmente pertencem à Zetz Capital.
-
-Para WhatsApp, substitua `href="#"` por um link no formato:
-
-`https://wa.me/5516999999999`
+O arquivo `assets/logo.svg` é uma versão tipográfica provisória, sem preto.
