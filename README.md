@@ -6,21 +6,12 @@ Página principal em formato Link Tree.
 
 `https://zetz-capital.github.io/zetz-capital/`
 
-## Estrutura preservada
+## Contato disponível
 
-```text
-zetz-capital/
-├── index.html
-├── README.md
-├── assets/
-│   ├── logo.svg
-│   └── favicon.svg
-├── css/
-│   └── style.css
-└── js/
-    └── home.js
-```
+A seção **Zetz nas redes** contém apenas o WhatsApp:
 
-A paleta é a mesma da Calculadora de Juros Compostos.
+`https://wa.me/5517991134081`
 
-O arquivo `assets/logo.svg` é uma versão tipográfica provisória, sem preto.
+Número exibido:
+
+`+55 17 99113-4081`
