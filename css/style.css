@@ -1,5 +1,5 @@
-:root {
 
+:root {
   --yellow-900: #5c4300;
   --yellow-800: #7a5800;
   --yellow-700: #9c7100;
@@ -17,103 +17,82 @@
   --border: #e8d9a8;
   --danger: #a33a2b;
   --shadow: 0 18px 50px rgba(92, 67, 0, 0.14);
+}
 
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  color: var(--brown-950);
+  background: var(--yellow-50);
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  font-family:"Inter","DM Sans",Arial,sans-serif;
-  color:var(--brown-950);
-  background:var(--yellow-50);
-}
-body::before{
-  content:"";
-  position:fixed;
-  inset:0;
-  pointer-events:none;
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
   background:
-    radial-gradient(circle at 15% 5%,rgba(245,217,111,.35),transparent 27%),
-    radial-gradient(circle at 90% 85%,rgba(237,194,58,.20),transparent 30%);
+    radial-gradient(circle at 15% 5%, rgba(245, 217, 111, .35), transparent 27%),
+    radial-gradient(circle at 90% 85%, rgba(237, 194, 58, .20), transparent 30%);
 }
-.shell{position:relative;width:min(760px,calc(100% - 28px));margin:0 auto;padding:64px 0 36px}
-.profile{text-align:center;padding:20px 16px 54px}
-.logo{width:min(330px,78vw);height:auto;border-radius:22px;box-shadow:var(--shadow)}
-.kicker{margin:24px 0 12px;color:var(--yellow-900);font-weight:800;font-size:.78rem;letter-spacing:.24em}
-h1,h2,h3{margin:0}
-h1{color:var(--brown-950);font-size:clamp(2.6rem,8vw,5.2rem);line-height:.98;letter-spacing:-.045em}
-.intro{max-width:590px;margin:24px auto 0;color:var(--brown-600);font-size:1.06rem;line-height:1.75}
-section{margin-top:36px}
-.section-title{display:flex;align-items:center;gap:14px;margin:0 6px 16px}
-.section-title span{color:var(--yellow-700);font-size:.72rem;font-weight:800;letter-spacing:.12em}
-.section-title h2{color:var(--yellow-900);font-size:1rem;letter-spacing:.08em;text-transform:uppercase}
-.tools{display:grid;gap:14px}
-.tool-card{
-  display:flex;align-items:center;justify-content:space-between;gap:24px;
-  padding:26px 28px;border:1px solid var(--border);border-radius:22px;
-  background:var(--white);color:inherit;text-decoration:none;
-  box-shadow:var(--shadow);transition:.2s ease;
+.shell { position: relative; width: min(760px, calc(100% - 28px)); margin: 0 auto; padding: 64px 0 36px; }
+.profile { text-align: center; padding: 20px 16px 54px; }
+.logo { width: min(360px, 84vw); height: auto; }
+.kicker { margin: 24px 0 12px; color: var(--yellow-900); font-weight: 800; font-size: .78rem; letter-spacing: .24em; }
+h1, h2, h3 { margin: 0; }
+h1 { color: var(--brown-950); font-size: clamp(2.6rem, 8vw, 5rem); line-height: .98; letter-spacing: -.045em; }
+.intro { max-width: 590px; margin: 24px auto 0; color: var(--brown-600); font-size: 1.06rem; line-height: 1.75; }
+section { margin-top: 36px; }
+.section-title { display: flex; align-items: center; gap: 14px; margin: 0 6px 16px; }
+.section-title span { color: var(--yellow-700); font-size: .72rem; font-weight: 800; letter-spacing: .12em; }
+.section-title h2 { color: var(--yellow-900); font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; }
+.tools { display: grid; gap: 14px; }
+.tool-card {
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  padding: 26px 28px; border: 1px solid var(--border); border-radius: 22px;
+  background: var(--white); color: inherit; text-decoration: none;
+  box-shadow: var(--shadow); transition: .2s ease;
 }
-.tool-card:hover{transform:translateY(-3px);border-color:var(--yellow-700)}
-.tool-card.featured{
-  color:var(--brown-950);
-  border-color:var(--yellow-700);
-  background:linear-gradient(135deg,var(--yellow-300),var(--yellow-500));
-}
-.card-label{display:block;margin-bottom:10px;color:var(--yellow-900);font-size:.7rem;font-weight:800;letter-spacing:.16em}
-.tool-card h3{color:var(--brown-950);font-size:1.48rem;line-height:1.2}
-.tool-card p{max-width:520px;margin:9px 0 0;color:var(--brown-600);line-height:1.55}
-.featured p{color:var(--brown-800)}
-.arrow{
-  flex:0 0 auto;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;
-  background:var(--yellow-100);border:1px solid var(--yellow-800);
-  color:var(--brown-950);font-size:1.25rem;font-weight:800;
-}
-.disabled{opacity:.72}
-.disabled:hover{transform:none;border-color:var(--border)}
-.pill{padding:8px 12px;border-radius:999px;background:var(--yellow-100);color:var(--yellow-900);font-size:.72rem;font-weight:800;white-space:nowrap}
-.connection-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.connection{
-  display:flex;flex-direction:column;padding:19px 20px;border:1px solid var(--border);
-  border-radius:17px;background:var(--white);color:inherit;text-decoration:none;
-}
-.connection strong{color:var(--brown-950);font-size:.96rem}
-.connection span{margin-top:4px;color:var(--brown-600);font-size:.82rem}
-.connection:not(.disabled-link):hover{border-color:var(--yellow-700);background:var(--yellow-50)}
-.disabled-link{cursor:not-allowed;opacity:.62}
-.setup-note{margin:14px 4px 0;color:var(--brown-600);font-size:.78rem;line-height:1.6}
-code{padding:2px 5px;border-radius:4px;background:var(--yellow-100);color:var(--yellow-900)}
-footer{display:flex;justify-content:space-between;gap:24px;margin-top:56px;padding:22px 4px;border-top:1px solid var(--border);color:var(--brown-600);font-size:.75rem}
-@media(max-width:600px){
-  .shell{padding-top:38px}.profile{padding-bottom:34px}.tool-card{padding:22px 19px}
-  .tool-card h3{font-size:1.25rem}.tool-card p{font-size:.9rem}
-  .connection-grid{grid-template-columns:1fr}.pill{display:none}footer{flex-direction:column;gap:8px}
-}
-
-
-.whatsapp-only {
-  grid-template-columns: 1fr;
-}
-
-.whatsapp-link {
-  align-items: center;
-  min-height: 82px;
-  text-align: center;
+.tool-card:hover { transform: translateY(-3px); border-color: var(--yellow-700); }
+.tool-card.featured {
+  background: linear-gradient(135deg, var(--yellow-300), var(--yellow-500));
   border-color: var(--yellow-700);
-  background: linear-gradient(135deg, var(--yellow-100), var(--yellow-200));
 }
-
-.whatsapp-link strong {
+.card-label { display: block; margin-bottom: 10px; color: var(--yellow-900); font-size: .7rem; font-weight: 800; letter-spacing: .16em; }
+.tool-card h3 { color: var(--brown-950); font-size: 1.48rem; line-height: 1.2; }
+.tool-card p { max-width: 520px; margin: 9px 0 0; color: var(--brown-600); line-height: 1.55; }
+.featured p { color: var(--brown-800); }
+.card-icon, .brand-mark {
+  display: grid; place-items: center; flex: 0 0 auto;
+  width: 48px; height: 48px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--yellow-200), var(--yellow-400));
+  border: 2px solid var(--yellow-700);
   color: var(--yellow-900);
-  font-size: 1.05rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem; font-weight: 700;
 }
-
-.whatsapp-link span {
-  color: var(--brown-800);
-  font-size: 0.95rem;
-  font-weight: 700;
+.connection-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.connection {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  min-height: 82px; justify-content: center;
+  padding: 19px 20px; border: 1px solid var(--yellow-700);
+  border-radius: 17px; background: linear-gradient(135deg, var(--yellow-100), var(--yellow-200));
+  color: inherit; text-decoration: none; box-shadow: var(--shadow);
 }
-
-.whatsapp-link:hover {
-  background: linear-gradient(135deg, var(--yellow-200), var(--yellow-300));
+.connection strong { color: var(--yellow-900); font-size: 1.05rem; }
+.connection span { margin-top: 6px; color: var(--brown-800); font-size: 0.95rem; font-weight: 700; }
+.connection:hover { background: linear-gradient(135deg, var(--yellow-200), var(--yellow-300)); }
+footer {
+  display: flex; justify-content: space-between; gap: 24px; margin-top: 56px;
+  padding: 22px 4px; border-top: 1px solid var(--border);
+  color: var(--brown-600); font-size: .75rem;
+}
+@media (max-width: 600px) {
+  .shell { padding-top: 38px; }
+  .profile { padding-bottom: 34px; }
+  .tool-card { padding: 22px 19px; }
+  .tool-card h3 { font-size: 1.25rem; }
+  .tool-card p { font-size: .9rem; }
+  footer { flex-direction: column; gap: 8px; }
 }
