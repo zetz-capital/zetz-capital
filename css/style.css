@@ -89,3 +89,31 @@ footer{display:flex;justify-content:space-between;gap:24px;margin-top:56px;paddi
   .tool-card h3{font-size:1.25rem}.tool-card p{font-size:.9rem}
   .connection-grid{grid-template-columns:1fr}.pill{display:none}footer{flex-direction:column;gap:8px}
 }
+
+
+.whatsapp-only {
+  grid-template-columns: 1fr;
+}
+
+.whatsapp-link {
+  align-items: center;
+  min-height: 82px;
+  text-align: center;
+  border-color: var(--yellow-700);
+  background: linear-gradient(135deg, var(--yellow-100), var(--yellow-200));
+}
+
+.whatsapp-link strong {
+  color: var(--yellow-900);
+  font-size: 1.05rem;
+}
+
+.whatsapp-link span {
+  color: var(--brown-800);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.whatsapp-link:hover {
+  background: linear-gradient(135deg, var(--yellow-200), var(--yellow-300));
+}
